@@ -36,3 +36,11 @@ npm run dev
 cd quirkyroomie-client
 npm install
 npm run dev
+
+
+## 📬 API Documentation
+
+ Set token in Authorization header (Bearer Token tab) for protected routes
+
+Postman Collection:  
+[Download quirkyroomie-postman-collection.json](./quirkyroomie-postman-collection.json/quick_Roomie.postman_collection.json)

@@ -1,0 +1,141 @@
+{
+	"info": {
+		"_postman_id": "2b9d803c-1ca1-4f65-b152-4643ce3ea7ed",
+		"name": "quick_Roomie",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "46562927",
+		"_collection_link": "https://shubhamkumar-4695450.postman.co/workspace/shubham-kumar's-Workspace~4f556a02-b4b6-42ba-8e08-e92b566ad73a/collection/46562927-2b9d803c-1ca1-4f65-b152-4643ce3ea7ed?action=share&source=collection_link&creator=46562927"
+	},
+	"item": [
+		{
+			"name": "Auth",
+			"item": [
+				{
+					"name": "register and login",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "  {\"name\": \"shubham\",\r\n  \"email\": \"shubham@example.com\",\r\n  \"password\": \"$2b$10$i8hT0NhESnFMddA9YJauu.Kqe/9XTlYhDWCBLJAwgx3OFBGpw9b2K\",\r\n  \"flatCode\": \"FLAT101\",\r\n  \"karma\": 10,\r\n  \"role\": \"flatmate\"\r\n  \r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/api/auth/register",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"auth",
+								"register"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Complaints",
+			"item": [
+				{
+					"name": "complaints",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"title\": \"Kitchen not cleaned\",\r\n  \"description\": \"The sink is full of dirty dishes again.\",\r\n  \"type\": \"Noise\",\r\n  \"severity\": \"Annoying\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/api/complaints",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"complaints"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Voting",
+			"item": [
+				{
+					"name": "voting get and post",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"votes\":\"upvote\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/api/686c04ce530ee8e11fe095c0/vote",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"686c04ce530ee8e11fe095c0",
+								"vote"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Leaderboard",
+			"item": [
+				{
+					"name": "leaderboard",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3000/api/flat/leaderboard",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"flat",
+								"leaderboard"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
