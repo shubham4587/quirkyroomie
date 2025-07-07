@@ -1,15 +1,15 @@
-# 🏡 QuirkyRoomie – Flatmate Complaint System
+
 
 A full-stack MERN application that allows flatmates to report and resolve household complaints. Built for a machine test.
 
-## 🔧 Tech Stack
+
 
 - **Frontend**: React + Vite + Tailwind CSS
 - **Backend**: Node.js + Express + MongoDB
 - **Authentication**: JWT
 - **Deployment**: Coming soon (Vercel + Render)
 
-## ✨ Features
+
 
 -  User Registration & Login (JWT Auth)
 -  Submit complaints (with type + severity)
@@ -20,7 +20,7 @@ A full-stack MERN application that allows flatmates to report and resolve househ
 -  Leaderboard (top karma users)
 -  Stats dashboard (offenders, categories)
 
-## 🛠️ How to Run Locally
+
 
 ```bash
 # 1. Clone repo
