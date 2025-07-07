@@ -1,0 +1,14 @@
+# Ignore node_modules in both folders
+quirkyroomie_Frontend/node_modules/
+quirkyroomie_Backend/node_modules/
+
+# Ignore .env files
+quirkyroomie_Frontend/.env
+quirkyroomie_Backend/.env
+
+# Ignore build output
+quirkyroomie_Frontend/dist/
+quirkyroomie_Backend/build/
+
+# System files
+.DS_Store
