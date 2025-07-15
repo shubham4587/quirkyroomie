@@ -18,7 +18,7 @@ const complaintSchema = new mongoose.Schema(
     },
     createdBy:   { type: mongoose.Schema.Types.ObjectId, ref: "User" },
 
-    /* 🔼 Voting */
+    /*  Voting */
     votes:       { type: Number, default: 0 },
     upvotedBy:   [{ type: mongoose.Schema.Types.ObjectId, ref: "User" }],
     downvotedBy: [{ type: mongoose.Schema.Types.ObjectId, ref: "User" }],

@@ -65,7 +65,7 @@ const ComplaintList = () => {
     try {
       await API.post("/complaints", form);
       setForm({ title: "", description: "", type: "Other", severity: "Mild" });
-      fetchComplaints();
+      fetchComplaints(); 
     } catch (err) {
       setError(err.response?.data?.message || "Failed to submit complaint");
     }

@@ -2,7 +2,7 @@
 const User = require("../models/User.js");
 const Complaint = require("../models/Complaint.js");
 
-/* 🏆 Top Karma Leaderboard */
+/* Top Karma Leaderboard */
 exports.getKarmaLeaderboard = async (req, res) => {
   try {
     const flatCode = req.user.flatCode;
@@ -18,7 +18,7 @@ exports.getKarmaLeaderboard = async (req, res) => {
   }
 };
 
-/* 🚨 Most Complained-About Users */
+/* Most Complained-About Users */
 exports.getTopOffenders = async (req, res) => {
   try {
     const flatCode = req.user.flatCode;
